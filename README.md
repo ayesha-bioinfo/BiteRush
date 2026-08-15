@@ -1,3 +1,7 @@
+
+<img width="1349" height="627" alt="image" src="https://github.com/user-attachments/assets/cf927d93-b7b5-4dfd-8954-5d3f04d11376" />
+
+
 # 🍔 BiteRush — Full-Stack Food Delivery Web Application
 
 BiteRush is a modern full-stack food delivery web application that allows users to discover restaurants, explore menus, add food items to a cart, apply promotional offers, securely create accounts, place orders, and track their order history.
