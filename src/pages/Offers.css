@@ -1,0 +1,581 @@
+.offers-page {
+  min-height: 100vh;
+  background: #fff9f6;
+  color: #111;
+}
+
+
+/* HERO */
+
+.offers-hero {
+  padding: 85px 0;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      #ff7558 0%,
+      transparent 30%
+    ),
+    #111;
+}
+
+.offers-hero-inner {
+  width: min(1120px, 86%);
+  margin: 0 auto;
+}
+
+.offers-eyebrow {
+  display: block;
+  margin-bottom: 13px;
+
+  color: #ff7558;
+
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.offers-hero h1 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: clamp(52px, 7vw, 82px);
+  line-height: 1;
+  letter-spacing: -4px;
+}
+
+.offers-hero h1 span {
+  color: #ff6748;
+}
+
+.offers-hero p {
+  max-width: 600px;
+
+  margin: 20px 0 0;
+
+  color: #aaa;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* CONTENT */
+
+.offers-content {
+  width: min(1120px, 86%);
+  margin: 0 auto;
+
+  padding: 65px 0 100px;
+}
+
+.offers-heading {
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.offers-heading > div > span {
+  color: #ff5738;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.8px;
+}
+
+.offers-heading h2 {
+  margin: 6px 0 0;
+
+  font-size: 35px;
+  letter-spacing: -1.3px;
+}
+
+.offers-heading > p {
+  color: #888;
+  font-size: 10px;
+}
+
+
+/* GRID */
+
+.offers-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* CARD */
+
+.offer-card {
+  overflow: hidden;
+
+  border: 1px solid #e9e9e9;
+  border-radius: 24px;
+
+  background: #fff;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.offer-card-top {
+  min-height: 105px;
+
+  padding: 22px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff0ea,
+      #ffd0c3
+    );
+}
+
+.offer-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #fff;
+  color: #ff5738;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.offer-discount {
+  padding: 8px 11px;
+
+  border-radius: 999px;
+
+  background: #111;
+  color: #fff;
+
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+}
+
+
+/* BODY */
+
+.offer-body {
+  padding: 24px;
+}
+
+.offer-body h3 {
+  margin: 0 0 9px;
+
+  font-size: 22px;
+  letter-spacing: -0.6px;
+}
+
+.offer-body > p {
+  min-height: 42px;
+
+  margin: 0;
+
+  color: #777;
+
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.offer-details {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.offer-details div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #777;
+
+  font-size: 10px;
+}
+
+.offer-details svg {
+  color: #ff5738;
+}
+
+.offer-minimum {
+  margin-top: 17px;
+
+  color: #999;
+
+  font-size: 9px;
+}
+
+.offer-minimum strong {
+  margin-left: 5px;
+
+  color: #222;
+}
+
+
+/* CODE */
+
+.offer-code-box {
+  padding: 18px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top: 1px dashed #ddd;
+
+  background: #fafafa;
+}
+
+.offer-code-box > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.offer-code-box span {
+  color: #aaa;
+
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+.offer-code-box strong {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.offer-code-box button {
+  height: 37px;
+
+  padding: 0 13px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #111;
+  color: white;
+
+  font-family: inherit;
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.offer-code-box button:hover {
+  background: #ff5738;
+}
+
+
+/* STATE */
+
+.offers-state {
+  padding: 80px 25px;
+
+  border: 1px solid #e9e9e9;
+  border-radius: 24px;
+
+  background: white;
+
+  text-align: center;
+}
+
+.offers-state svg {
+  margin-bottom: 15px;
+
+  color: #ff5738;
+}
+
+.offers-state h2 {
+  margin: 0 0 8px;
+}
+
+.offers-state p {
+  margin: 0;
+
+  color: #888;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .offers-content,
+  .offers-hero-inner {
+    width: 91%;
+  }
+
+  .offers-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .offers-hero h1 {
+    letter-spacing: -2.5px;
+  }
+
+}
+/* =========================================
+   FINAL OFFERS READABILITY PASS
+========================================= */
+
+
+/* HERO */
+
+.offers-eyebrow {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.offers-hero p {
+  max-width: 650px;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.offers-heading > div > span {
+  font-size: 12px;
+  letter-spacing: 1.7px;
+}
+
+.offers-heading h2 {
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.offers-heading > p {
+  font-size: 14px;
+}
+
+
+/* =========================================
+   OFFER CARD
+========================================= */
+
+.offer-card-top {
+  min-height: 115px;
+  padding: 24px;
+}
+
+.offer-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.offer-discount {
+  padding: 9px 13px;
+
+  font-size: 12px;
+  letter-spacing: 0.8px;
+}
+
+
+/* =========================================
+   OFFER CONTENT
+========================================= */
+
+.offer-body {
+  padding: 26px;
+}
+
+.offer-body h3 {
+  margin-bottom: 10px;
+
+  font-size: 23px;
+  line-height: 1.3;
+}
+
+.offer-body > p {
+  min-height: 48px;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+
+/* Restaurant + expiry */
+
+.offer-details {
+  margin-top: 21px;
+  gap: 11px;
+}
+
+.offer-details div {
+  gap: 8px;
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+
+/* Minimum order */
+
+.offer-minimum {
+  margin-top: 18px;
+
+  font-size: 12px;
+}
+
+.offer-minimum strong {
+  font-size: 13px;
+}
+
+
+/* =========================================
+   PROMO CODE AREA
+========================================= */
+
+.offer-code-box {
+  padding: 19px 25px;
+}
+
+.offer-code-box > div {
+  gap: 5px;
+}
+
+.offer-code-box span {
+  font-size: 11px;
+  letter-spacing: 1.3px;
+}
+
+.offer-code-box strong {
+  font-size: 17px;
+  letter-spacing: 1.2px;
+}
+
+.offer-code-box button {
+  height: 42px;
+
+  padding: 0 16px;
+
+  gap: 7px;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   LOADING / ERROR / EMPTY
+========================================= */
+
+.offers-state h2 {
+  font-size: 27px;
+}
+
+.offers-state p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .offers-heading h2 {
+    font-size: 34px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .offers-hero {
+    padding: 65px 0;
+  }
+
+  .offers-hero h1 {
+    font-size: 48px;
+    line-height: 1.03;
+  }
+
+  .offers-hero p {
+    font-size: 15px;
+  }
+
+  .offers-heading h2 {
+    font-size: 31px;
+  }
+
+  .offer-body {
+    padding: 23px;
+  }
+
+  .offer-body h3 {
+    font-size: 21px;
+  }
+
+  .offer-body > p {
+    min-height: auto;
+    font-size: 14px;
+  }
+
+  .offer-code-box {
+    padding: 17px 22px;
+  }
+
+}

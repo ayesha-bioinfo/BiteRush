@@ -1,0 +1,490 @@
+.signup-page {
+  min-height: calc(100vh - 76px);
+
+  padding: 48px 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fffaf7;
+}
+
+
+.signup-container {
+  width: 100%;
+  max-width: 1120px;
+
+  min-height: 660px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.05fr 0.95fr;
+
+  overflow: hidden;
+
+  border: 1px solid #eee7e3;
+  border-radius: 30px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 30px 80px
+    rgba(35, 20, 15, 0.08);
+}
+
+
+/* ========================================
+   LEFT SHOWCASE
+======================================== */
+
+.signup-showcase {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 65px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: #151515;
+
+  color: white;
+}
+
+
+.signup-showcase::before {
+  content: "";
+
+  position: absolute;
+
+  width: 380px;
+  height: 380px;
+
+  top: -165px;
+  right: -180px;
+
+  border-radius: 50%;
+
+  background: #ff5638;
+}
+
+
+.signup-showcase::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  right: -80px;
+  bottom: -120px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+}
+
+
+.signup-showcase-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.signup-eyebrow {
+  color: #ff684d;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+
+.signup-showcase h1 {
+  max-width: 520px;
+
+  margin: 18px 0 0;
+
+  font-size:
+    clamp(42px, 5vw, 67px);
+
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+}
+
+
+.signup-showcase h1 span {
+  color: #ff5b3d;
+}
+
+
+.signup-showcase p {
+  max-width: 470px;
+
+  margin-top: 25px;
+
+  color: #bdbdbd;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+.signup-benefits {
+  margin-top: 38px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+.signup-benefits div {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: #dedede;
+
+  font-size: 13px;
+}
+
+
+.signup-benefits svg {
+  color: #ff6044;
+}
+
+
+.signup-food-visual {
+  position: absolute;
+
+  right: 35px;
+  bottom: 25px;
+
+  font-size: 95px;
+
+  transform: rotate(12deg);
+
+  opacity: 0.16;
+}
+
+
+/* ========================================
+   FORM SIDE
+======================================== */
+
+.signup-form-section {
+  padding: 55px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.signup-form-wrapper {
+  width: 100%;
+
+  max-width: 420px;
+
+  margin: auto;
+}
+
+
+.signup-heading > span {
+  color: #ff5739;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+
+.signup-heading h2 {
+  margin: 8px 0 7px;
+
+  font-size: 38px;
+
+  letter-spacing: -1.5px;
+}
+
+
+.signup-heading p {
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.signup-form {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+.signup-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+.signup-field label {
+  color: #292929;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+
+.signup-input {
+  min-height: 52px;
+
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  border: 1px solid #dedede;
+
+  border-radius: 13px;
+
+  background: #fff;
+}
+
+
+.signup-input:focus-within {
+  border-color: #ff5b3d;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(255, 91, 61, 0.08);
+}
+
+
+.signup-input svg {
+  flex-shrink: 0;
+
+  color: #8c8c8c;
+}
+
+
+.signup-input input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  font-size: 14px;
+
+  font-family: inherit;
+}
+
+
+.signup-password-toggle {
+  width: 34px;
+  height: 34px;
+
+  border: none;
+
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   MESSAGES
+======================================== */
+
+.signup-error {
+  padding: 11px 13px;
+
+  border-radius: 10px;
+
+  background: #fff0ed;
+
+  color: #c93b24;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.signup-success {
+  padding: 11px 13px;
+
+  border-radius: 10px;
+
+  background: #eef9f2;
+
+  color: #187746;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+/* ========================================
+   SUBMIT
+======================================== */
+
+.signup-submit {
+  min-height: 55px;
+
+  border: none;
+
+  border-radius: 13px;
+
+  background: #151515;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.signup-submit:hover {
+  background: #ff5638;
+
+  transform: translateY(-2px);
+}
+
+
+.signup-submit:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* ========================================
+   LOGIN LINK
+======================================== */
+
+.signup-login {
+  margin-top: 24px;
+
+  padding-top: 21px;
+
+  border-top: 1px solid #eeeeee;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 6px;
+
+  font-size: 13px;
+}
+
+
+.signup-login span {
+  color: #777;
+}
+
+
+.signup-login a {
+  color: #ff5638;
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 850px) {
+
+  .signup-container {
+    grid-template-columns: 1fr;
+  }
+
+
+  .signup-showcase {
+    min-height: 400px;
+
+    padding: 45px;
+  }
+
+
+  .signup-form-section {
+    padding: 45px;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .signup-page {
+    padding: 20px;
+  }
+
+
+  .signup-showcase,
+  .signup-form-section {
+    padding: 32px 25px;
+  }
+
+
+  .signup-showcase h1 {
+    font-size: 42px;
+
+    letter-spacing: -2px;
+  }
+
+}
